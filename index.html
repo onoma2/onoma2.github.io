@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>xformer — manuals</title>
+<style>
+  :root{
+    --blue:#2563eb; --amber:#ca8a04; --green:#16a34a; --red:#dc2626; --purp:#7c3aed;
+    --ink:#1a1a1a; --mut:#5b5b5b; --line:#e5e5e5; --card:#ffffff; --bg:#fafafa;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif; line-height:1.5;}
+  .wrap{max-width:880px; margin:0 auto; padding:40px 24px 90px}
+  h1{font-size:1.9rem; line-height:1.2; margin:0 0 6px}
+  h2{font-size:1.2rem; line-height:1.25; margin:40px 0 12px; padding-bottom:6px; border-bottom:2px solid var(--blue)}
+  h2.sys{border-color:var(--green)} h2.play{border-color:var(--purp)}
+  .lede{color:var(--mut); font-size:1.08rem; margin:0 0 8px}
+  a{color:var(--blue); text-decoration:none}
+  .cards{display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin:8px 0}
+  @media(max-width:620px){.cards{grid-template-columns:1fr}}
+  .card{display:block; background:var(--card); border:1px solid var(--line); border-radius:10px;
+    padding:13px 16px; color:inherit; transition:border-color .12s, box-shadow .12s}
+  .card:hover{border-color:var(--blue); box-shadow:0 2px 10px rgba(0,0,0,.06)}
+  .card .t{font-weight:700; font-size:1rem; color:var(--blue)}
+  .card.g .t{color:var(--green)} .card.p .t{color:var(--purp)}
+  .card .d{color:var(--mut); font-size:.88rem; margin-top:2px}
+  .footer{margin-top:48px; padding-top:14px; border-top:1px solid var(--line); color:var(--mut); font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>xformer — manuals</h1>
+<p class="lede">Firmware-grounded manuals for the xformer track engines and systems, each with OLED screen renders. Tap any card. <strong>0.7.9</strong>.</p>
+
+<h2>Track engines</h2>
+<div class="cards">
+  <a class="card" href="manuals/NOTE_MANUAL.html"><span class="t">Note</span><div class="d">core melodic step sequencer</div></a>
+  <a class="card" href="manuals/CURVE_MANUAL.html"><span class="t">Curve</span><div class="d">shape-per-step CV (25 shapes)</div></a>
+  <a class="card" href="manuals/STOCHASTIC_MANUAL.html"><span class="t">Stochastic</span><div class="d">probabilistic rhythm + melody</div></a>
+  <a class="card" href="manuals/PHASEFLUX_MANUAL.html"><span class="t">PhaseFlux</span><div class="d">4×4 pulse synthesizer</div></a>
+  <a class="card" href="manuals/TUESDAY_MANUAL.html"><span class="t">Tuesday (Algo)</span><div class="d">generative algorithms</div></a>
+  <a class="card" href="manuals/INDEXED_MANUAL.html"><span class="t">Indexed</span><div class="d">duration-indexed sequencing</div></a>
+  <a class="card" href="manuals/DISCRETE_MANUAL.html"><span class="t">Discrete</span><div class="d">threshold-map sequencing</div></a>
+  <a class="card" href="manuals/FRACTAL_MANUAL.html"><span class="t">Fractal</span><div class="d">section-sampled looper</div></a>
+</div>
+
+<h2 class="sys">Systems</h2>
+<div class="cards">
+  <a class="card g" href="manuals/ROUTING_MANUAL.html"><span class="t">Routing</span><div class="d">mod-matrix: targets, sources, shapers</div></a>
+  <a class="card g" href="manuals/CVROUTER_MANUAL.html"><span class="t">CV Router</span><div class="d">interpolating 4-lane CV crossfader</div></a>
+  <a class="card g" href="manuals/MODULATOR_MANUAL.html"><span class="t">Modulators</span><div class="d">shapes, JustF, Geode, MO.*/G.* ops</div></a>
+  <a class="card g" href="manuals/GENERATOR.html"><span class="t">Generators</span><div class="d">Random/Algo/Euclidean/Helical</div></a>
+  <a class="card g" href="manuals/T9type-learn.html"><span class="t">T9Type</span><div class="d">Teletype track — ops &amp; ecosystem</div></a>
+</div>
+
+<h2 class="play">Interactive</h2>
+<div class="cards">
+  <a class="card p" href="manuals/ENGINES_COMPARED.html"><span class="t">Engines, compared &amp; heard</span><div class="d">sounding comparison of all 8 engines</div></a>
+  <a class="card p" href="manuals/FRACTAL_SIMULATOR.html"><span class="t">Fractal simulator</span><div class="d">Web-Audio Fractal track sim</div></a>
+  <a class="card p" href="manuals/HARMONY_SIMULATOR.html"><span class="t">Harmony simulator</span><div class="d">Web-Audio Harmony track sim</div></a>
+</div>
+
+<div class="footer">xformer firmware · <a href="https://github.com/onoma2/xformer">github.com/onoma2/xformer</a></div>
+
+</div>
+</body>
+</html>
